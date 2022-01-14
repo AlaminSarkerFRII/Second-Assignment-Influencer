@@ -1,0 +1,277 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Oxygen:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+}
+
+/* header section */
+
+.header-section {
+    background-color: #562EFF;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover a {
+    color: rgb(194, 16, 84);
+    font-weight: 600px;
+}
+
+nav ul li img {
+    width: 51px;
+    height: 51px;
+    border-radius: 20px;
+}
+
+
+/* influencer section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.influencer-title {
+    font-size: 30px;
+    color: black;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+
+/* second-header  section*/
+
+
+
+h1 {
+    font-size: 50px;
+    line-height: 1.5em;
+}
+
+.second-header {
+    display: flex;
+}
+
+.left-side {
+    height: 270px;
+    width: 582px;
+    left: 120px;
+    top: 285px;
+    border-radius: 41px;
+}
+
+.right-side {
+    height: 414px;
+    width: 440px;
+    left: 835px;
+    top: 211px;
+    background-image: url(../images/Circle\ design.svg);
+    border-radius: 0px;
+}
+
+.right-side img:hover {
+    transform: translate(4px, 4px);
+    transition: tranform 0.5s linear;
+    background-color: rgb(143, 148, 148);
+    border-radius: 100%;
+
+}
+
+.influence-btn {
+    height: 44px;
+    width: 196px;
+    left: 120px;
+    top: 511px;
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px, 24px, 10px, 24px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+
+}
+
+#icon {
+    margin-left: 5px;
+}
+
+
+
+/* Influencer-Collection */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding-bottom: 30px;
+}
+
+.course {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0 0 4px 0;
+    border-radius: 10px;
+    background-color: #fcf9f9;
+
+}
+
+
+.course .course-banner img {
+    width: 290px;
+    height: 180px;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: orange;
+}
+
+.fa-star.empty {
+    color: rgb(139, 87, 23);
+}
+
+
+
+.right-arrow {
+    text-align: right;
+}
+
+.right-arrow a {
+    text-decoration: none;
+    color: #E02C6D;
+}
+
+.right-arrow a:hover {
+    font-weight: 500;
+    background-color: tan;
+    border-radius: 10px;
+}
+
+/* footer Section */
+
+
+
+.footer-section {
+    width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    font-weight: 300px;
+    text-align: center;
+    color: white;
+    line-height: 1;
+    background-color: darkslateblue;
+}
+
+.social-link a {
+
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+cite {
+    color: orangered;
+}
+
+/*--------------
+ Media quaries
+ --------------------*/
+
+/* -------------------------For Mobile Device-------------- */
+
+@media only screen and (max-width:688px) {
+
+    .header {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+}
+
+/* tablete and Medium Device--------------------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
