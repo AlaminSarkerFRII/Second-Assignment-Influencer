@@ -141,14 +141,22 @@ h1 {
     justify-content: space-between;
 }
 
+.influencer-detail {
+    line-height: 1.5em;
+}
+
+.influencer-title {
+    font-size: 30px;
+}
+
 .influencer-title.collection {
     padding: 10px 0;
     color: crimson;
 }
 
 .influencer-title.collection:hover {
-    background-color: rgb(196, 164, 170);
     transition: 0.5s linear;
+    color: lightsalmon;
 }
 
 .fa-star {
@@ -185,6 +193,12 @@ h1 {
 contact-section-css
 
 ------------- */
+.section-title:hover {
+    transition: 0.8s linear;
+    font-weight: bold;
+    color: lightcoral;
+    padding: 0 10px;
+}
 
 .contact {
     display: flex;
@@ -250,11 +264,12 @@ cite {
 
 /* -------------------------For Mobile Device-------------- */
 
-@media only screen and (max-width:688px) {
+@media (max-width:688px) {
 
-    .header {
+    .second-header {
         width: 100%;
         flex-direction: column;
+        grid-template-columns: repeat(1fr, 1fr);
         justify-content: center;
     }
 
@@ -263,11 +278,10 @@ cite {
     }
 
     .influences {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        grid-template-columns: repeat(1fr);
     }
 
-    .player,
-    .blog,
     .influencer {
         flex-direction: column;
     }
