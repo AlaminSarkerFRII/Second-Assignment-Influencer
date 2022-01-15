@@ -1,15 +1,45 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Oxygen:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap');
 
-body {
-
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+
+    max-width: 1400px;
     font-family: 'Oswald', sans-serif;
     background-color: white;
 }
 
 /* header top */
+
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.top-tittle {
+    margin-left: 30%;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.navbar a:hover {
+    color: rgb(150, 13, 41);
+    background-color: darkgray;
+    border-radius: 10px;
+}
 
 h2 {
     text-align: center;
@@ -32,8 +62,6 @@ main {
 }
 
 .container {
-    max-width: 1200px;
-    padding: 20px;
     margin-top: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -91,6 +119,7 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     border: none;
+    margin-top: 10px;
 
 }
 
@@ -243,7 +272,7 @@ contact-section-css
     text-align: center;
     color: white;
     line-height: 1;
-    background-color: darkslateblue;
+    background-color: rgb(58, 53, 88);
 }
 
 .social-link a {
@@ -266,37 +295,93 @@ cite {
 
 @media (max-width:688px) {
 
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-side {
+        width: 100%;
+        align-content: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
     .second-header {
         width: 100%;
         flex-direction: column;
-        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        align-items: center;
     }
 
     .container {
         width: 100%;
+        align-items: center;
     }
 
     .influences {
+        width: 100%;
         flex-direction: column;
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .contact {
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+/* ---------------tablet and Medium Device--------------------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+    .contact {
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-header {
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 220px;
+        padding-top: 20px;
     }
 
     .influencer {
         flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .influences {
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 }
 
-/* tablete and Medium Device--------------------------- */
+/* ---lagre screen-------- */
 
-@media only screen and (min-width:689px) and (max-width:992px) {
-    .container {
+@media (min-width: 992px) and (max-width : 1200px) {
+
+    .continer {
         width: 100%;
-    }
-
-    .players,
-    .blogs,
-    .influencers {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
