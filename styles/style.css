@@ -153,10 +153,9 @@ h1 {
 .influencer .influencer-banner img {
     width: 290px;
     height: 180px;
-
+    padding: 5px 5px;
     justify-content: center;
     align-items: center;
-
 }
 
 .influencer-banner img:hover {
@@ -171,7 +170,8 @@ h1 {
 }
 
 .influencer-detail {
-    line-height: 1.5em;
+    padding-top: 20px;
+    line-height: 1.5;
 }
 
 .influencer-title {
@@ -199,8 +199,6 @@ h1 {
 .fa-star.empty {
     color: rgb(139, 87, 23);
 }
-
-
 
 .right-arrow {
     text-align: right;
@@ -271,7 +269,7 @@ contact-section-css
     border-radius: 7px;
     text-align: center;
     color: white;
-    line-height: 1;
+    line-height: 1.5;
     background-color: rgb(58, 53, 88);
 }
 
@@ -281,10 +279,6 @@ contact-section-css
     margin-right: 5px;
     font-size: 25px;
     color: rgb(243, 226, 230);
-}
-
-cite {
-    color: orangered;
 }
 
 /*--------------
